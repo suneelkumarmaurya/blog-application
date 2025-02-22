@@ -1,21 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Button } from './components/ui/button'
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Layout from "./Layout/Layout";
+import { RouteIndex } from "./helpers/RouteName";
+import Index from "./pages/Index";
 function App() {
-  
-
   return (
-   
-      <div className="text-red-800">
-       app js
-       <Button>shadcn button</Button>
-      </div>
-      
-    
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path={RouteIndex} element={<Layout />}>
+          <Route index element={<Index />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
