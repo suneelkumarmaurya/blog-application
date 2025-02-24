@@ -3,6 +3,7 @@ import {
   SidebarContent,
   SidebarFooter,
   SidebarGroup,
+  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
@@ -59,7 +60,7 @@ const AppSidebar = () => {
           </SidebarMenu>
         </SidebarGroup>
         <SidebarGroup>
-          <sidebarGroupLabel>categories</sidebarGroupLabel>
+          <SidebarGroupLabel>categories</SidebarGroupLabel>
           <SidebarMenu>
             <SidebarMenuItem>
               <SidebarMenuButton>
